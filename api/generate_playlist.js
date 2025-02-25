@@ -15,7 +15,7 @@ export default async function handler(req, res) {
         const name = channel.channel_name || 'Unknown';
         const logo = channel.channel_logo || '';
         const group = channel.channel_genre || 'General';
-        const url = `https://pflix9999.vercel.app/api/stream?channel=${channel.channel_id}`;
+        const url = `https://flixlist-six.vercel.app/api/stream?channel=${channel.channel_id}`;
 
         m3uPlaylist += `#EXTINF:-1 tvg-id="${channel.channel_id}" tvg-name="${name}" tvg-logo="${logo}" group-title="${group}", ${name}\n`;
         m3uPlaylist += `${url}\n\n`;
